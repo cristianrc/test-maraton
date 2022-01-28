@@ -1,0 +1,5 @@
+<div class="users-container">
+  <ng-container *ngFor="let user of users; let i = index">
+    <app-user [index]="i" [user]="user"></app-user>
+  </ng-container>
+</div>

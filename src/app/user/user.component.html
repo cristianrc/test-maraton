@@ -1,0 +1,16 @@
+<div *ngIf="user" class="user">
+  <img src="https://dummyimage.com/200x200/024983/ffffff&text={{user.website}}" alt="">
+  <h2>{{ i }} {{user.username}}</h2>
+  <p>
+    <span class="label">Name: </span> {{ user.name }}
+  </p>
+  <p>
+    <span class="label">Email: </span> {{ user.email }}
+  </p>
+  <p>
+    <span class="label">Company: </span> {{ user.company?.name }}
+  </p>
+  <p>
+    <span class="label">City: </span> {{ user.address?.city }}
+  </p>
+</div>
